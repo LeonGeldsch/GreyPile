@@ -1,0 +1,85 @@
+/*
+ * CSS for the Profile page.
+ */
+.content {
+  display: flex;
+  background-image: url('../images/background/profile_bg.jpg');
+  background-size: cover;
+}
+
+.your_info {
+  height: auto;
+  width: 20%;
+  height: 310px;
+  margin: 10px;
+  padding: 10px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-color: white;
+}
+
+.your_info .profile_info li {
+  line-height: 1.5;
+}
+
+.your_info .profile_picture img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin: 20px;
+  border-bottom: 2px solid black;
+  background-color: red;
+}
+
+.your_info .profile_info {
+  width: 100%;
+  padding-top: 20px;
+  border-top: 1px solid black;
+}
+
+.your_posts {
+  display: flex;
+  height: auto;
+  width: 40%;
+  margin: 10px;
+  text-align: center;
+  font-size: 1.5rem;
+  padding: 20px;
+  background-color: white;
+}
+
+.events {
+  margin: 10px;
+  padding: 10px;
+  width: 20%;
+  height: 580px;
+  background-color: white;
+}
+
+.events .your_competitions {
+  height: 300px;
+  width: 100%;
+  margin-bottom: 20px;
+  padding-top: 10px;
+  text-align: center;
+  background-color: #84ADBF;
+}
+
+.events .your_competitions h2 {
+  font-size: 2rem;
+  margin-bottom: 5px;
+}
+
+.events .your_competitions p {
+  margin-bottom: 20px;
+  border-bottom: 2px solid black;
+}
+
+.events .friend_requests {
+  width: 100%;
+  height: 230px;
+  padding-top: 20px;
+  text-align: center;
+  background-color: #84ADBF;
+}

@@ -1,0 +1,108 @@
+/*
+ * CSS for the Home page.
+ */
+.summary {}
+
+.summary_buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  justify-content: center;
+  background-image: url('../images/background/home_bg.png');
+  background-size: cover;
+  background-position: center;
+  background-color: #D1E5ED;
+}
+
+.progress {
+  position: absolute;
+  margin-top: auto;
+  margin-bottom: auto;
+  font-size: 3rem;
+  text-align: center;
+  color: #84ADBF;
+  text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF;
+}
+
+.status {
+  display: flex;
+  text-align: center;
+  padding: 1%;
+  margin: 1%;
+  margin-top: 10%;
+  width: 15%;
+  min-width: 100px;
+  max-height: 10%;
+  border: medium solid black;
+  justify-content: center;
+  background-color: white;
+  border-radius: 8px;
+}
+
+.posts {
+  background-color: white;
+}
+
+.sort {
+  display: flex;
+  height: 50px;
+  justify-content: center;
+  align-items: center;
+  background-color: #697478;
+}
+
+.post {
+  display: flex;
+  height: 400px;
+  padding: 1%;
+  margin: 1%;
+  background-color: #697478;
+}
+
+.icon_name_time {
+  display: flex;
+  height: 100px;
+  align-items: center;
+  background-color: ##9DACB3;
+}
+
+.icon_name_time_text {
+  width: 55%;
+  padding: 10px;
+  background-color: #9DACB3;
+}
+
+.icon {
+  width: 100px;
+  margin-right: 5%;
+  background-color: #9DACB3;
+}
+
+.name {
+  background-color: #9DACB3;
+}
+
+.time {
+  position: absolute;
+  right: 3%;
+  background-color: #9DACB3;
+}
+
+.text {
+  margin-top: 10%;
+  background-color: #9DACB3;
+}
+
+.picture {
+  display: flex;
+  width: 45%;
+  margin-right: 2%;
+  background-color: #9DACB3;
+}
+
+.picture img {
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+  object-position: center;
+}

@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="assets/css/master.css">
+  <link rel="stylesheet" href="assets/css/home.css">
+  <title>GreyPile</title>
+</head>
+
+<body>
+  <!-- Sidebar open/close script. -->
+  <script>
+    function openNav() {
+      document.getElementById("sidebar").style.width = "250px";
+      document.getElementById("content").style.marginLeft = "250px";
+    }
+
+    function closeNav() {
+      document.getElementById("sidebar").style.width = "0%";
+      document.getElementById("content").style.width = "100%";
+    }
+  </script>
+  <header class="header_bg">
+    <!-- Logo -->
+    <div class="logo">
+      <img src="assets/images/logo/GreyPileLogo.svg" alt="Logo">
+    </div>
+    <!-- Header -->
+    <div class="header">
+      <!-- Header-icons -->
+      <img src="assets/images/icons/perm_identity-24px.svg" alt="Friends" style="margin-right: ">
+      <img src="assets/images/icons/help_outline-24px.svg" alt="Help">
+      <img src="assets/images/icons/settings_applications-24px.svg" alt="Options">
+      <!-- Searchbar -->
+      <input type="text" placeholder="search" class="searchbar">
+    </div>
+  </header>
+  <main class="main">
+    <!-- Sidebar -->
+    <aside class="sidebar" id="sidebar">
+      <ul class="sidebar_list">
+        <li><a class="active" href="#">Home</a></li>
+        <li><a href="pages/profile.html">Profile</a></li>
+        <li><a href="pages/minis_inventory.html">Minis Inventory</a></li>
+        <li><a href="pages/army_lists.html">Army Lists</a></li>
+        <li><a href="pages/leaderboards.html">Leaderboards</a></li>
+        <li><a href="pages/competitions.html">Competitions</a></li>
+        <li><a href="pages/market.html">Market</a></li>
+      </ul>
+      <!-- Sidebar-messages -->
+      <div class="messages_bg">
+        <div class="messages_title">
+          Messages
+        </div>
+        <div class="messages">
+          New Site Update
+        </div>
+        <div class="messages">
+          Winners for February announced
+        </div>
+        <div class="messages">
+          Voting for February open
+        </div>
+        <div class="messages">
+          New minis added
+        </div>
+        <div class="messages">
+          User survey
+        </div>
+        <div class="messages" style="height: 10%">
+          Site test
+        </div>
+      </div>
+      <!-- Sidebar-footer -->
+      <footer class="footer">
+        <a href="#">Contact</a>
+        <a href="#">Privacy</a>
+        <a href="#">About me</a>
+        <a href="#">Impressum</a>
+      </footer>
+      <!-- Sidebar collapse button -->
+      <button class="close-open-nav" onclick="closeNav()">☰ Close Sidebar</button>
+    </aside>
+    <div class="content" id="content">
+      <!-- Progress summary -->
+      <div class="summary">
+        <div class="summary_buttons">
+          <div class="progress">
+            <h1>GreyPile<br>Your Miniature Inventory!</h1>
+          </div>
+          <div class="status">
+            <h2>Unassembled<br>256</h2>
+          </div>
+          <div class="status">
+            <h2>Assembled<br>80</h2>
+          </div>
+          <div class="status">
+            <h2>Primed<br>20</h2>
+          </div>
+          <div class="status">
+            <h2>WIP<br>10</h2>
+          </div>
+          <div class="status">
+            <h2>Finished<br>55</h2>
+          </div>
+        </div>
+      </div>
+      <div class="posts">
+        <!-- Sort-bar -->
+        <div class="sort">
+          <input type="checkbox" name="friends_only" value="friends_only"> Show posts of your friends only.<br>
+          <input type="checkbox" name="new" value="new" checked> Sort by new.<br>
+          <input type="checkbox" name="popularity" value="popularity"> Sort by popularity.<br>
+        </div>
+        <!-- Post1 -->
+        <article class="post">
+          <div class="picture">
+            <img src="assets/images/post_images/post1.png" alt="Post1">
+          </div>
+          <div class="icon_name_time_text">
+            <div class="icon_name_time">
+              <div class="icon">
+                <img src="assets/images/icons/perm_identity-24px.svg" alt="Profile-picture" style="width:100px;height:100px;">
+              </div>
+              <div class="name">
+                User123
+              </div>
+              <div class="time">
+                9h 15min ago
+              </div>
+            </div>
+            <div class="text">
+              <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd
+                gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos
+                et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+            </div>
+          </div>
+        </article>
+        <!-- Post2 -->
+        <article class="post">
+          <div class="picture">
+            <img src="assets/images/post_images/post2.png" alt="Post2">
+          </div>
+          <div class="icon_name_time_text">
+            <div class="icon_name_time">
+              <div class="icon">
+                <img src="assets/images/icons/perm_identity-24px.svg" alt="Profile-picture" style="width:100px;height:100px;">
+              </div>
+              <div class="name">
+                UserWithAMediumSizedName
+              </div>
+              <div class="time">
+                9h 15min ago
+              </div>
+            </div>
+            <div class="text">
+              <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd
+                gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos
+                et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+            </div>
+          </div>
+        </article>
+        <!-- Post3 -->
+        <article class="post">
+          <div class="picture">
+            <img src="assets/images/post_images/post3.png" alt="Post3">
+          </div>
+          <div class="icon_name_time_text">
+            <div class="icon_name_time">
+              <div class="icon">
+                <img src="assets/images/icons/perm_identity-24px.svg" alt="Profile-picture" style="width:100px;height:100px;">
+              </div>
+              <div class="name">
+                UserWithAVeryLongNameThatIsAlmostTooLong
+              </div>
+              <div class="time">
+                9h 15min ago
+              </div>
+            </div>
+            <div class="text">
+              <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd
+                gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos
+                et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+            </div>
+          </div>
+        </article>
+        <!-- Post4 -->
+        <article class="post">
+          <div class="picture">
+            <img src="assets/images/post_images/post4.png" alt="Post4">
+          </div>
+          <div class="icon_name_time_text">
+            <div class="icon_name_time">
+              <div class="icon">
+                <img src="assets/images/icons/perm_identity-24px.svg" alt="Profile-picture" style="width:100px;height:100px;">
+              </div>
+              <div class="name">
+                UserWithAVeryLongNameThatIsDefinitlyTooLongForThisBox
+              </div>
+              <div class="time">
+                9h 15min ago
+              </div>
+            </div>
+            <div class="text">
+              <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd
+                gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos
+                et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </main>
+</body>
+
+</html>

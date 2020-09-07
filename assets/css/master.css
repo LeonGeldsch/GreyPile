@@ -1,0 +1,178 @@
+/*
+ * Reset
+ */
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/*
+ * My code
+ */
+* {
+  font-family: "Lato", sans-serif;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+.header_bg {
+  display: flex;
+  height: 80px;
+  background-color: blue;
+}
+
+.header_bg .header {
+  display: flex;
+  flex-direction: row-reverse;
+  width: 85%;
+  background-color: #9DACB3;
+}
+
+.header_bg .header .searchbar {
+  text-align: left;
+  width: 30%;
+  height: 1%;
+  border-radius: 10px;
+  margin-top: auto;
+  margin-bottom: auto;
+  padding: 14px;
+}
+
+.header_bg .logo {
+  display: flex;
+  width: 15%;
+  justify-content: center;
+  background-color: #D1E5ED;
+}
+
+.main {
+  display: flex;
+  height: auto;
+  background-color: yellow;
+}
+
+.sidebar {
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 15%;
+  height: 100vh;
+  overflow-x: hidden;
+  text-align: left;
+  transition: 0.5s;
+  background-color: #9DACB3;
+}
+
+.sidebar .sidebar_list {
+  list-style-type: none;
+  width: 100%;
+  justify-content: flex-start;
+  background-color: #9DACB3;
+}
+
+.sidebar a {
+  display: block;
+  color: black;
+  padding: 16px;
+  text-decoration: none;
+}
+
+.sidebar a.active {
+  background-color: #4D788B;
+  color: white;
+}
+
+.sidebar a:hover:not(.active) {
+  background-color: #697478;
+  color: white;
+}
+
+.sidebar .messages_bg {
+  width: 80%;
+  height: 30%;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+  outline: 4px solid black;
+  background-color: #4D788B;
+}
+
+.sidebar .messages_bg .messages_title {
+  height: 10%;
+  text-align: center;
+}
+
+.sidebar .messages_bg .messages {
+  border-top: 2px solid black;
+  background-color: #697478;
+  height: 15%;
+}
+
+.sidebar .close-open-nav {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.sidebar .footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.content {
+  width: 85%;
+  background-color: #84ADBF;
+  justify-content: center;
+}
